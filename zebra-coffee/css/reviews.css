@@ -1,0 +1,46 @@
+/* =========================================================
+   reviews.css — Reviews page only
+   ========================================================= */
+
+.summary-box {
+  background: #fff; border: 2px solid var(--zebra-black); border-radius: 28px; padding: 28px;
+  display: flex; flex-wrap: wrap; gap: 28px; align-items: center; height: 100%;
+}
+.summary-avg { font-size: 4.5rem; line-height: 1; }
+.summary-stars { font-size: 1.4rem; letter-spacing: 2px; }
+
+.rating-bar-row { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
+.rating-bar-row .label { width: 30px; font-weight: 600; }
+.rating-bar-row .count { width: 20px; text-align: right; }
+.rating-bar {
+  flex: 1; height: 12px; border: 2px solid var(--zebra-black); border-radius: 999px;
+  overflow: hidden; background: var(--zebra-cream);
+}
+.rating-bar-fill { height: 100%; background: var(--zebra-teal); transition: width 0.4s ease; }
+
+.sort-select { border: 2px solid var(--zebra-black); border-radius: 999px; min-height: 44px; width: auto; }
+
+.review-card {
+  background: #fff; border: 2px solid var(--zebra-black); border-radius: 24px; padding: 24px;
+  height: 100%; display: flex; flex-direction: column; gap: 12px;
+}
+.review-card.is-new { border-color: var(--zebra-teal); box-shadow: 6px 6px 0 var(--zebra-teal); }
+.avatar {
+  width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--zebra-black);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 800; flex: 0 0 44px;
+}
+.avatar-0 { background: var(--zebra-teal-light); }
+.avatar-1 { background: var(--zebra-yellow); }
+.avatar-2 { background: #fff; }
+.review-stars { white-space: nowrap; letter-spacing: 1px; }
+.recommend-tag { align-self: flex-start; font-size: 0.8rem; font-weight: 600; background: var(--zebra-teal-light); border-radius: 999px; padding: 4px 10px; }
+
+/* star rating in the form */
+.star-btn {
+  width: 44px; height: 44px; border-radius: 12px; border: 2px solid var(--zebra-black);
+  background: #fff; font-size: 1.3rem; line-height: 1;
+}
+.star-btn.on { background: var(--zebra-yellow); }
+#rating-group.is-invalid .star-btn { border-color: var(--zebra-error); }
+fieldset { border: 0; margin: 0; padding: 0; }
